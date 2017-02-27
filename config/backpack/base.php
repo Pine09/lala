@@ -12,11 +12,11 @@ return [
     */
 
     // Project name. Shown in the breadcrumbs and a few other places.
-    'project_name' => 'Potato',
+    'project_name' => 'SnackHouse',
 
     // Menu logos
-    'logo_lg'   => '<b>Pot</b>ato',
-    'logo_mini' => '<b>P</b>to',
+    'logo_lg'   => '<b>Snack</b>House',
+    'logo_mini' => '<b>S</b>H',
 
     // Developer or company name. Shown in footer.
     'developer_name' => 'Potato De Explorer',
