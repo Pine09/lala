@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('backpack::base.layout');
+    return view('layouts.content');
 });
 //Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function(){});
 
