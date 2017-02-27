@@ -26,6 +26,7 @@
    @yield('login')
    @yield('slider')
 
+
     <!--content-->
     <div class="toko-content">
         <div class="container">
