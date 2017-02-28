@@ -31,19 +31,19 @@
     <div class="toko-content">
         <div class="container">
          <!-SIDE CONTENT STARTS HERE-------------------------------->
-            <div class="side-content col-md-3">
+            <div class="side-content col-md-2">
                 @yield('side-content')
             </div>
 
          <!-MAIN CONTENT STARTS HERE-------------------------------->
-            <div class="main-content col-md-9">
+            <div class="main-content col-md-10">
                @yield('main-content')
             </div>
         </div>
         <!--container-->
     </div>
     <!--content-->
-   @yield('pager')
+
     <!--comtemt emds-->
 
     <div class="toko-footer">

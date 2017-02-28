@@ -2,7 +2,7 @@
     <!--slider-->
 
     <div class="toko-slider">
-        <div class="">
+        <div class="container">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
