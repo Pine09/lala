@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 
 Route::get('/potato/add', function() {
-   return view('backpack::base.add');
+   return view('backpack::base.addproduct');
 });
 
-Route::get('/potato/listproduk', 'ListController@index');
+Route::get('/potato/listproduct', 'ListController@index');
