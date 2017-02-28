@@ -13,9 +13,9 @@ class ListController extends Controller
      */
     public function index()
     {  
-        $produk = \App\Product::orderby('ID_product')->get();//ini untuk tarik dari database
+        $produk = \App\product::orderby('id')->get();//ini untuk tarik dari database
         $data['produk']=$produk; 
-        return view('list',$data);
+        return view('backpack::base.productlist',$data);
     }
 
     /**
