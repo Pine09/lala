@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('backpack::base.layout');
+    return view('home');
 });
 //Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function(){});
+
 
 Route::get('/potato/add', function() {
    return view('backpack::base.add');
