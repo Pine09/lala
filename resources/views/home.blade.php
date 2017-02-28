@@ -31,12 +31,12 @@
     <div class="toko-content">
         <div class="container">
          <!-SIDE CONTENT STARTS HERE-------------------------------->
-            <div class="side-content col-md-2">
+            <div class="side-content col-md-3">
                 @yield('side-content')
             </div>
 
          <!-MAIN CONTENT STARTS HERE-------------------------------->
-            <div class="main-content col-md-10">
+            <div class="main-content col-md-9">
                @yield('main-content')
             </div>
         </div>
