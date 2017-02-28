@@ -1,81 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.master')
+@section('title', 'SnackHouse Homepage')
+@include('includes.header')
+@include('includes.slider')
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>@yield('title')</title>
+@section('side-content')
+         <div class="list">
+             <div class="category-header list-group-item" align="center">Categories </div>
+             <a href="#" class="list-group-item">Potato Chips    </a>
+             <a href="#" class="list-group-item">Candy           </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+             <a href="#" class="list-group-item">Coming Soon     </a>
+         </div>
+@endsection
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-   @yield('header')
-   @yield('login')
-   @yield('slider')
-
-
-    <!--content-->
-    <div class="toko-content">
-        <div class="container">
-         <!-SIDE CONTENT STARTS HERE-------------------------------->
-            <div class="side-content col-md-3">
-                @yield('side-content')
+@section('main-content')
+      <section class="item-section">
+         <span class="section-header list-group-item" align="center">New In Stock ! </span>
+            <!-ONE ITEM-->
+            <div class="col-md-3">
+                <div class="panel">
+                    <div class="panel-info">
+                       <a href="#keproductdetail">
+                            <img src="img/PotatoChips.jpg" alt="snack" style="min-height:150px" class="img-responsive">
+                       </a>
+                    </div>
+                    <hr>
+                    <div class="panel-body">
+                       <a href="#keproductdetail">
+                            <label for="item">Potato Chip</label>
+                       </a>
+                       <br>
+                       <label for="price">Rp 15.000</label><br>
+                       <a href="#" class="card-link">
+                            <button type="button" class="btn btn-success form-control"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                       </a>
+                    </div>
+                </div>
             </div>
-
-         <!-MAIN CONTENT STARTS HERE-------------------------------->
-            <div class="main-content col-md-9">
-               @yield('main-content')
+            <!-END OF ONE ITEM-->
+      </section>
+      <nav aria-label="...">
+          <ul class="pager">
+              <li><a href="#">More..   .</a></li>
+          </ul>
+      </nav>
+      <section class="item-section">
+         <span class="section-header list-group-item" align="center">Popular </span>
+            <!-ONE ITEM-->
+            <div class="col-md-3">
+                <div class="panel">
+                    <div class="panel-info">
+                       <a href="#keproductdetail">
+                            <img src="img/PotatoChips.jpg" alt="snack" style="min-height:150px" class="img-responsive">
+                       </a>
+                    </div>
+                    <hr>
+                    <div class="panel-body">
+                       <a href="#keproductdetail">
+                            <label for="item">Potato Chip</label>
+                       </a>
+                       <br>
+                       <label for="price">Rp 15.000</label><br>
+                       <a href="#" class="card-link">
+                            <button type="button" class="btn btn-success form-control"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                       </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--container-->
-    </div>
-    <!--content-->
+            <!-END OF ONE ITEM-->
+      </section>
+      <nav aria-label="...">
+          <ul class="pager">
+              <li><a href="#">More...</a></li>
+          </ul>
+      </nav>
 
-    <!--comtemt emds-->
+@endsection
 
-    <div class="toko-footer">
-        @yield('footer')
-    </div>
-    <!--toko footer-->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js "></script>
-    <script type="text/javascript">
-        $('#myModal').modal('hide');
-        // www.jquery2dotnet.com
-        $(function() {
-            $('#login-form-link').click(function(e) {
-                $("#login-form").delay(100).fadeIn(100);
-                $("#register-form").fadeOut(100);
-                $('#register-form-link').removeClass('active');
-                $(this).addClass('active');
-                e.preventDefault();
-            });
-            $('#register-form-link').click(function(e) {
-                $("#register-form").delay(100).fadeIn(100);
-                $("#login-form").fadeOut(100);
-                $('#login-form-link').removeClass('active');
-                $(this).addClass('active');
-                e.preventDefault();
-            });
-
-        });
-    </script>
-</body>
-
-</html>
+@include('includes.footer')

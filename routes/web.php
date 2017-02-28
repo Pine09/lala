@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.content');
+    return view('home');
 });
 //Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function(){});
 
