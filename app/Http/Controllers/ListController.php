@@ -12,10 +12,10 @@ class ListController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {  
+    {
         $produk = \App\product::orderby('id')->get();//ini untuk tarik dari database
-        $data['produk']=$produk; 
-        return view('backpack::base.productlist',$data);
+        $data['produk']=$produk;
+        return view('backpack::base.listproduct',$data);
     }
 
     /**

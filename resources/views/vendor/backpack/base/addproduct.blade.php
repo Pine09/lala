@@ -1,102 +1,97 @@
-@extends('adminlte::layouts.app')
+@extends('backpack::layout')
 
-@section('htmlheader_title')
-	{{ trans('adminlte_lang::message.home') }}
+@section('header')
+    <section class="content-header">
+      <h1>
+        {{ trans('backpack::base.addproduct') }}<small>{{ trans('backpack::base.add_prod_page') }}</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="{{ url(config('backpack.base.route_prefix', 'admin')) }}">{{ config('backpack.base.project_name') }}</a></li>
+        <li class="active">{{ trans('backpack::base.addproduct') }}</li>
+      </ol>
+    </section>
 @endsection
 
 
-@section('main-content')
-	<div class="container-fluid spark-screen">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
+@section('content')
+<div class="spark-screen">
+   <div class="row">
+      <div class="col-md-8">
 
-				<!-- Default box -->
-				<div class="box">
-					<div class="box-header with-border">
-						<h3 class="box-title">Home</h3>
+         <!-- Default box -->
+         <div class="box">
+            <div class="box-header with-border">
+               <h3 class="box-title">Add Product</h3>
 
-						<div class="box-tools pull-right">
-							<button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-								<i class="fa fa-minus"></i></button>
-							<button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-								<i class="fa fa-times"></i></button>
-						</div>
-					</div>
-					<div class="box-body">
-						{{ trans('adminlte_lang::message.logged') }}. Start creating your amazing application!
-						<br>
-
-						<!-- TABLE -->
-					<table>
-
-					<tr align="center">
-						<td colspan="2"><h2><b>Add Product</b></h2></td>
-					</tr>
-
-					<tr>
-						<td align="center" ><b>Product Title </b></td>
-						<td><input type="text" name="product_title" size="50" required /></td>
-					</tr>
+               <div class="box-tools pull-right">
+                  <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                     <i class="fa fa-minus"></i></button>
+                  <!--<button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                     <i class="fa fa-times"></i></button>-->
+               </div>
+            </div>
+            <div class="box-body">
 
 
+               <!-- FORM ADD PRODUCT -->
+               <form class="form-group" action="" method="post">
+                  <div class="col-md-12">
 
-					<tr>
-						<td align="center">
-						<b>Product Category </b></td>
-						<td><select name="product_cat">
-						<option  >Select a Category</option>
+                  <div class="form-group row">
+                     <label>Product Name </label>
+                     <input type="text" name="product_title" class="form-control" size="50" required />
+                  </div>
 
-
-				
-						</select>
-						</td>
-					</tr>
-
-			<tr>
-				<td align="center"><b>Product Brand </b></td>
-				<td>
-				<select name="product_brand">
-				<option >Select a Category</option>
+                  <div class="form-group row">
+                     <label>Product Category </label>
+                  <select name="product_cat" class="form-control">
+                     <option  >Select a Category</option>
 
 
-	
-				</select>
-				</td>
-			</tr>
 
-			<tr>
-				<td align="center" ><b>Product Image </b></td>
-				<td><input type="file" name="product_image"  /></td>
-			</tr>
+                     </select>
+                  </div>
 
-			<tr>
-				<td align="center"><b>Product Price </b></td>
-				<td><input type="text" name="product_price" size="50" required /></td>
-			</tr>
-
-			<tr>
-				<td align="center"><b>Product Description</b></td>
-				<td><input type="text" name="product_desc" size="40" height="20"> </input></td>
-			</tr>
-
-			<tr>
-				<td align="center"><b>Product Keywords</b></td>
-				<td><input type="text" name="product_keywords" size="50" required  /></td>
-			</tr>
+                  <div class="form-group row">
+                     <label>Product Brand </label>
+                     <select name="product_brand" class="form-control">
+                        <option >Select a Brand</option>
 
 
-			<tr>
-				<td></td>
-				<td><input align="center" type="submit" name="insert_post" value="Add Product" required ></td>
-			</tr>
 
-	</table>
-					</div>
-					<!-- /.box-body -->
-				</div>
-				<!-- /.box -->
+                     </select>
+                  </div>
 
-			</div>
-		</div>
-	</div>
+                  <div class="form-group row">
+                     <label>Product Image </label>
+                     <input type="file" name="product_image"  class="form-control"/>
+                  </div>
+
+                  <div class="form-group row">
+                     <label>Product Price </label>
+                     <div class="input-group">
+                       <span class="input-group-addon">Rp</span>
+                       <input type="NUMBER" name="product_price" class="form-control" size="50" required />
+                     </div>
+                  </div>
+
+                  <div class="form-group row">
+                     <label>Product Description </label>
+                     <textarea name="prod_desc" class="form-control" rows="15" cols="80" style="resize:vertical;"></textarea>
+                  </div>
+
+                  <div class="form-group row">
+                        <input type="submit" class="btn btn-success btn-lg" name="insert_post" value="+ Add Product">
+                  </div>
+
+               </div>
+               </form>
+            </div>
+            <!-- /.box-body -->
+         </div>
+         <!-- /.box -->
+
+      </div>
+   </div>
+</div>
 @endsection

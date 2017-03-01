@@ -20,8 +20,10 @@
           <!-- ==== Recommended place for admin menu items ==== -->
           <!-- ================================================ -->
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/dashboard') }}"><i class="fa fa-dashboard"></i> <span>{{ trans('backpack::base.dashboard') }}</span></a></li>
-          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/add') }}"><i class="fa fa-plus"></i> <span> {{ trans('backpack::base.addproduct') }}</span></a></li>
-          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/elfinder') }}"><i class="fa fa-files-o"></i> <span>File manager</span></a></li>
+          <!--<li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/add') }}"><i class="fa fa-plus"></i> <span> {{ trans('backpack::base.addproduct') }}</span></a></li>-->
+          <li class="header">{{ trans('backpack::crud.actions') }}</li>
+          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/listproduct') }}"><i class="fa fa-list-alt"></i> <span> {{ trans('backpack::base.listproduct') }}</span></a></li>
+          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/elfinder') }}"><i class="fa fa-files-o"></i> <span>{{ trans('backpack::crud.file_manager') }}</span></a></li>
 
 
           <!-- ======================================= -->
