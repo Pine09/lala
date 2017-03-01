@@ -34,7 +34,7 @@
             <div class="box-body">
 
 
-               <!-- FORM ADD PRODUCT -->
+               <!-- FORM EDIT PRODUCT -->
                <form class="form-group" action="" method="post">
                   <div class="col-md-12">
 
@@ -54,18 +54,8 @@
                   </div>
 
                   <div class="form-group row">
-                     <label>Product Brand </label>
-                     <select name="product_brand" class="form-control">
-                        <option >Select a Brand</option>
-
-
-
-                     </select>
-                  </div>
-
-                  <div class="form-group row">
-                     <label>Product Image </label>
-                     <input type="file" name="product_image"  class="form-control"/>
+                     <label>Qty on Hand </label>
+                       <input type="NUMBER" name="product_price" class="form-control" size="50" required />
                   </div>
 
                   <div class="form-group row">
@@ -74,6 +64,11 @@
                        <span class="input-group-addon">Rp</span>
                        <input type="NUMBER" name="product_price" class="form-control" size="50" required />
                      </div>
+                  </div>
+
+                  <div class="form-group row">
+                     <label>Product Image </label>
+                     <input type="file" name="product_image"  class="form-control"/>
                   </div>
 
                   <div class="form-group row">
