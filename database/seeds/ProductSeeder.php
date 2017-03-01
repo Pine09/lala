@@ -14,7 +14,7 @@ class ProductSeeder extends Seeder
     {
         $products = new product();
         $products->product_name='Potato';
-        $products->Category='Chips';
+        $products->category_id='1';
         $products->qty='10';
         $products->price='100000';
         $products->image='test';
@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
 
         $products = new product();
         $products->product_name='French Fries';
-        $products->Category='Fast Food';
+         $products->category_id='1';
         $products->qty='10';
         $products->price='45.000';
         $products->description='super french fries';
