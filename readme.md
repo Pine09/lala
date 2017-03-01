@@ -1,6 +1,8 @@
 # A Laravel + Backpack based Project
 
 Potato is delicious
+Potato is fabulous
+Potato is special
 
 ## License
 
