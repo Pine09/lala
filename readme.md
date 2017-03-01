@@ -1,5 +1,6 @@
 # A Laravel + Backpack based Project
 
+Potato is delicious
 
 ## License
 

@@ -32,7 +32,9 @@ return [
     'handcrafted_by'       => 'Handcrafted by',
     'powered_by'           => 'Powered by',
     'addproduct'           => 'Add Product',
-    'listproduct'           => 'List Product',
+    'listproduct'          => 'List Product',
     'add_prod_page'        => 'The page you use to add product',
-    'list_prod_page'        => 'The page that list all the products',
+    'list_prod_page'       => 'The page that list all the products',
+    'editproduct'          => 'Edit Product',
+    'edit_prod_page'       => 'The page to edit the product information. Please proceed with care.',
 ];
