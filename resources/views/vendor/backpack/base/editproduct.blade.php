@@ -3,12 +3,12 @@
 @section('header')
     <section class="content-header">
       <h1>
-        {{ trans('backpack::base.addproduct') }}<small>{{ trans('backpack::base.add_prod_page') }}</small>
+        {{ trans('backpack::base.editproduct') }}<small>{{ trans('backpack::base.edit_prod_page') }}</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="{{ url(config('backpack.base.route_prefix', 'admin')) }}">{{ config('backpack.base.project_name') }}</a></li>
         <li><a href="{{ url(config('backpack.base.route_prefix', 'admin'). '/listproduct') }}">{{ trans('backpack::base.listproduct') }}</a></li>
-        <li class="active">{{ trans('backpack::base.addproduct') }}</li>
+        <li class="active">{{ trans('backpack::base.editproduct') }}</li>
       </ol>
     </section>
 @endsection
@@ -22,7 +22,7 @@
          <!-- Default box -->
          <div class="box">
             <div class="box-header with-border">
-               <h3 class="box-title">Add Product</h3>
+               <h3 class="box-title">EditProduct</h3>
 
                <div class="box-tools pull-right">
                   <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -82,7 +82,7 @@
                   </div>
 
                   <div class="form-group row">
-                        <button type="submit" class="btn btn-success btn-lg" name="add_prod"><i class="fa fa-plus" aria-hidden="true"></i> Add Product</input>
+                        <button type="submit" class="btn btn-success btn-lg" name="edit_prod"><i class="fa fa-check" aria-hidden="true"></i> Save Changes</input>
                   </div>
 
                </div>
